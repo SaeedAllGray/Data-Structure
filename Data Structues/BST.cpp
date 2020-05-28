@@ -19,7 +19,7 @@ class Element
 public:
 	Element<type>(){}
 	Element<type>(type keyInput):key(keyInput){}
-private
+private:
 	type key;
 };
 template<class type>
@@ -53,7 +53,6 @@ private:
 template<class type>
 bool BSTTree<type>::Insert(Element<type> newData)
 {
-	BSTNode<type> *current,*previous;
 	BSTNode<type> *current,*previous;
 	current = root;
 	previous = NULL;
